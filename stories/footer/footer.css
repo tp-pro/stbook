@@ -5,28 +5,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
-
-.storybook-footer svg {
-  display: inline-block;
-  vertical-align: top;
+.storybook-footer--primary {
+    color: white;
+    background-color: #082da8;
 }
-
-.storybook-footer h1 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1;
-  margin: 6px 0 6px 10px;
-  display: inline-block;
-  vertical-align: top;
+.storybook-footer--secondary {
+    color: #333;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
-
-.storybook-footer button + button {
-  margin-left: 10px;
+.storybook-footer--full {
+    width: 100%;
 }
-
-.storybook-footer .welcome {
-  color: #333;
-  font-size: 14px;
-  margin-right: 10px;
+.storybook-footer--medium {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
