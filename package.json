@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/tp-pro/stbook#readme",
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.5.3",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-interactions": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
