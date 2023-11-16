@@ -1,10 +1,12 @@
 import './page.css';
 import { createHeader } from '../header/Header';
+import { createFooter } from '../footer/Footer';
 
 export const createPage = () => {
   const article = document.createElement('article');
   let user = null;
   let header = null;
+  let footer = null;
 
   const rerenderHeader = () => {
     const wrapper = document.getElementsByTagName('article')[0];
@@ -89,6 +91,13 @@ export const createPage = () => {
 `;
 
   article.insertAdjacentHTML('beforeend', section);
+
+  const createFooterElement = () => {
+    return createFooter({ onLogin, onLogout, onCreateAccount, user });
+  };
+
+  footer = createFooterElement();
+  article.appendChild(footer);
 
   return article;
 };
